@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_account_large"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/textName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_account"
+            android:gravity="center_vertical"
+            android:hint="@string/register_user_name_hint"
+            android:inputType="textCapWords"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/textSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_account"
+            android:gravity="center_vertical"
+            android:hint="@string/register_user_surname_hint"
+            android:inputType="textCapWords"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/textUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_account"
+            android:gravity="center_vertical"
+            android:hint="@string/register_user_username_hint"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_gender"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/textGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/gender_array"
+                android:paddingStart="10dp"
+                android:prompt="@string/register_user_gender_hint"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/secondary_text"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/textPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_phone"
+            android:gravity="center_vertical"
+            android:hint="@string/register_user_phone_hint"
+            android:inputType="phone"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/textEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_email"
+            android:gravity="center_vertical"
+            android:hint="@string/register_user_email_hint"
+            android:inputType="textEmailAddress"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/textStreet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_location"
+            android:gravity="center_vertical"
+            android:hint="@string/register_user_street_hint"
+            android:inputType="textPostalAddress"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/textCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_location"
+            android:gravity="center_vertical"
+            android:hint="@string/register_user_city_hint"
+            android:inputType="textPostalAddress"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/textState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_location"
+            android:gravity="center_vertical"
+            android:hint="@string/register_user_state_hint"
+            android:inputType="textPostalAddress"/>
+
+    </LinearLayout>
+
+</ScrollView>
