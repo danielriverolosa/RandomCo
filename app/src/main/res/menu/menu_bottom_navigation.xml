@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_favorite_list"
+        android:enabled="true"
+        android:icon="@drawable/ic_favorite"
+        android:title="@string/menu_bottom_navigation_favorite_list_text"/>
+    <item
+        android:id="@+id/item_user_list"
+        android:enabled="true"
+        android:icon="@drawable/ic_user_list"
+        android:title="@string/menu_bottom_navigation_user_list_text"/>
+    <item
+        android:id="@+id/item_near_list"
+        android:enabled="true"
+        android:icon="@drawable/ic_near"
+        android:title="@string/menu_bottom_navigation_near_list_text"/>
+
+</menu>
