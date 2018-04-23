@@ -45,7 +45,7 @@ class UserDataRepository @Inject constructor(
 
     private fun generateRandomLocations(userEntityList: List<UserEntity>) {
         userEntityList.forEach {userEntity ->
-            val pair = getRandomLocation( 40.4512225, -3.4498356, 10000)
+            val pair = getRandomLocation( 40.4203506, -3.7722323, 4000)
             userEntity.location.latitude = pair.first
             userEntity.location.longitude = pair.second
         }
