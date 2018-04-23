@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Randomco</string>
+
+    <string name="menu_bottom_navigation_favorite_list_text">Favorites</string>
+    <string name="menu_bottom_navigation_user_list_text">Users</string>
+    <string name="menu_bottom_navigation_near_list_text">Near me</string>
+    <string name="menu_add_text">Add</string>
+    <string name="menu_search_text">Search</string>
+    <string name="menu_register_user_text">Confirm</string>
+    <string name="menu_user_item_delete_text">Delete</string>
+    <string name="menu_user_item_favorite_text">Add to favorites</string>
+    <string name="menu_current_location_text">Current location</string>
+
+    <string name="item_user_menu_option">⋮</string>
+
+    <string name="user_detail_location_text">%1$s, %2$s, %3$s</string>
+    <string name="register_user_name_hint">Name</string>
+    <string name="register_user_surname_hint">Surname</string>
+    <string name="register_user_username_hint">Username</string>
+    <string name="register_user_gender_hint">Gender</string>
+    <string name="register_user_phone_hint">Phone</string>
+    <string name="register_user_email_hint">Email</string>
+    <string name="register_user_street_hint">Street</string>
+    <string name="register_user_city_hint">City</string>
+    <string name="register_user_state_hint">State</string>
+
+    <string name="validation_empty_error_message">Field cannot be empty</string>
+    <string name="validation_email_error_message">The email format is not correct</string>
+    <string name="validation_phone_error_message">The phone format is not correct</string>
+    <string name="fragment_user_list_empty_text">List is empty! Try to add new users</string>
+
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+</resources>
