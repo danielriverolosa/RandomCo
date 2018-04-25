@@ -49,6 +49,7 @@ class UserListPresenterTest {
         Mockito.doAnswer {
             it.onAnswer<User, List<User>> { listOf(mockUser()) }
         }.`when`(userListUseCase).execute(any())
+
         Mockito.`when`(view.getListType()).thenReturn(UserListType.Normal())
 
         presenter.onAttach(view)

@@ -1,6 +1,5 @@
 package com.rivero.daniel.randomco.infrastructure.di.component
 
-import com.rivero.daniel.randomco.infrastructure.di.module.UseCaseModule
 import com.rivero.daniel.randomco.infrastructure.di.module.ViewModule
 import com.rivero.daniel.randomco.infrastructure.di.scope.ViewScope
 import com.rivero.daniel.randomco.presentation.main.MainActivity
@@ -14,8 +13,7 @@ import dagger.Subcomponent
 @ViewScope
 @Subcomponent(
         modules = [
-            ViewModule::class,
-            UseCaseModule::class
+            ViewModule::class
         ]
 )
 interface ViewComponent {

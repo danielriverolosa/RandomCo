@@ -3,7 +3,6 @@ package com.rivero.daniel.randomco.presentation.main.presenter
 import com.nhaarman.mockito_kotlin.any
 import com.nhaarman.mockito_kotlin.doAnswer
 import com.nhaarman.mockito_kotlin.verify
-import com.rivero.daniel.randomco.domain.Location
 import com.rivero.daniel.randomco.domain.User
 import com.rivero.daniel.randomco.domain.usecase.delete.DeleteUserUseCase
 import com.rivero.daniel.randomco.presentation.main.view.UserDetailView
@@ -15,7 +14,6 @@ import org.junit.runner.RunWith
 import org.mockito.InjectMocks
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import java.util.*
 
 @RunWith(MockitoJUnitRunner::class)
 class UserDetailPresenterTest {

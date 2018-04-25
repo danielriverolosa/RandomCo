@@ -11,7 +11,7 @@ import timber.log.Timber
 abstract class UseCase<out T> {
     private var callback: UseCaseCallback<T>? = null
 
-    fun execute(callback: UseCaseCallback<T>, vararg params: Any) {
+    fun executeAsync(callback: UseCaseCallback<T>, vararg params: Any) {
         this.callback = callback
         val deferred = async(CommonPool) { runInBackground(*params) }
         launch(UI) { manageDeferred(deferred) }
