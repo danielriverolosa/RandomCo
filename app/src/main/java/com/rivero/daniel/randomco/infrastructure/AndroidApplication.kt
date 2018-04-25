@@ -6,6 +6,7 @@ import com.rivero.daniel.randomco.infrastructure.di.component.ApplicationCompone
 import com.rivero.daniel.randomco.infrastructure.di.component.DaggerApplicationComponent
 import com.rivero.daniel.randomco.infrastructure.di.module.ApplicationModule
 import com.rivero.daniel.randomco.infrastructure.di.module.DatabaseModule
+import com.squareup.leakcanary.LeakCanary
 import timber.log.Timber
 
 
@@ -22,6 +23,7 @@ class AndroidApplication: Application() {
     override fun onCreate() {
         applicationComponent.inject(this)
         super.onCreate()
+        LeakCanary.install(this)
         initTimber()
     }
 
